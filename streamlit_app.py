@@ -170,17 +170,17 @@ with tab2:
     
     # Display thinking process
     if st.session_state.thinking_data:
-    st.subheader("AI Analysis:")
+        st.subheader("AI Analysis:")
     
     # Ensure it's a string
-    thinking_text = str(st.session_state.thinking_data or "")
+        thinking_text = str(st.session_state.thinking_data or "")
     
     # Format thinking data for better readability
-    st.markdown(f"""
-    <div class="thinking-box">
-    {thinking_text.replace('\n', '<br>')}
-    </div>
-    """, unsafe_allow_html=True)
+        st.markdown(f"""
+        <div class="thinking-box">
+        {thinking_text.replace('\n', '<br>')}
+        </div>
+        """, unsafe_allow_html=True)
     
     # Display planned order
     if st.session_state.current_plan:
@@ -270,4 +270,5 @@ st.markdown("""
         <p>AI Task Scheduler | Powered by Streamlit</p>
     </div>
 """, unsafe_allow_html=True)
+
 
